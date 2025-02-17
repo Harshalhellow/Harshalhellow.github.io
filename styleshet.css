@@ -30,6 +30,26 @@ nav ul li a {
     font-size: 18px;
 }
 
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.home-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
 section {
     padding: 50px 20px;
 }

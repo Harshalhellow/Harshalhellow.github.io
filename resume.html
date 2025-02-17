@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Harshal's Portfolio</title>
-    <link rel="stylesheet" href="styleshet.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume | Harshal Mishra Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
+      <div class="container header-container">
         <h1>Resume</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="writings.html">Writings</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
+            <li><a href="writings.html">Writings</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
-    
-    <section id="resume">
-        <h2>My Resume</h2>
-        <iframe src="Current Ressume.pdf" width="100%" height="600px"></iframe>
-        <p><a href="Current Ressume.pdf" download>Download Resume</a></p>
-    </section>
-    
-    <footer id="contact">
-        <p>Contact me at <a href="hmishra123456789@gmail.com"> hmishra123456789@gmail.com </a></p>
-        <p><a href="https://github.com/Harshalhellow">GitHub</a> | <a href="https://www.linkedin.com/in/harshal-mishra-507b77187/">LinkedIn</a></p>
-    </footer>
-</body>
-</html>
 
+    <section id="resume">
+      <div class="container">
+        <h2>My Professional Journey</h2>
+        <p>
+          Here you can review my resume detailing my education, skills, and experience. I believe in continuous learning and professional growth, and my resume highlights the projects and roles that have shaped my career.
+        </p>
+        <iframe src="Current%20Ressume.pdf" width="100%" height="600px"></iframe>
+        <p>
+          <a href="Current%20Ressume.pdf" download class="btn">Download Resume</a>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-container">
+        <p>
+          Contact me at
+          <a href="mailto:hmishra123456789@gmail.com">hmishra123456789@gmail.com</a>
+        </p>
+        <p>
+          <a href="https://github.com/Harshalhellow" target="_blank">GitHub</a> |
+          <a href="https://www.linkedin.com/in/harshal-mishra-507b77187/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

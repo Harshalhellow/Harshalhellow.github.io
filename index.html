@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Harshal Mishra | Portfolio</title>
+    <title>Harshal Mishra | Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,48 +13,69 @@
     <link rel="stylesheet" href="styleshet.css" />
   </head>
   <body>
-    <header>
-      <div class="container header-container">
-        <h1>Harshal Mishra</h1>
-        <nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html" aria-label="Harshal Mishra, home">
+          Harshal Mishra
+        </a>
+        <nav aria-label="Primary navigation">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="writings.html">Writings</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="resume.html">Résumé</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="home" class="home-section">
-      <div class="container home-container">
-        <div class="home-text">
-          <h2>Welcome to My Portfolio</h2>
-          <p>
-            Hi, I'm Harshal Mishra – a passionate developer who has experince  in web development, Genetic Algorithms, and software engineering.  I love to learn about new areas of Computer Science  and continuously learn through hands-on projects.
-          </p>
-          <p>
-            Explore my projects to see how I have combined creativity and technical skills to build innovative applications. Feel free to check out my resume and writings for more details on my professional journey and thought process.
-          </p>
-          <a href="projects.html" class="btn">View Projects</a>
+    <main id="main-content">
+      <section id="home" class="home-section hero-section">
+        <div class="container home-container">
+          <div class="home-text">
+            <p class="eyebrow">
+              Computer Science graduate · ML &amp; AI Honours researcher
+            </p>
+            <h1>Software developer building practical, human-centred systems with AI.</h1>
+            <p class="hero-summary">
+              Hi, I’m Harshal. I build practical software and apply machine learning
+              to real-world problems—from education technology to deep learning for
+              preoperative colon-cancer staging.
+            </p>
+            <div class="hero-actions">
+              <a href="#work" class="btn">View selected work</a>
+              <a href="resume.html" class="btn btn-secondary">View résumé</a>
+            </div>
+            <div class="hero-links" aria-label="Professional profiles">
+              <a
+                href="https://github.com/Harshalhellow"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/harshal-mishra-507b77187/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+
+          <figure class="home-image">
+            <img src="profile.jpg" alt="Portrait of Harshal Mishra" />
+            <figcaption>Adelaide, Australia · Open to graduate opportunities</figcaption>
+          </figure>
         </div>
-        <div class="home-image">
-          <img src="profile.jpg" alt="Harshal Mishra" />
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <div class="container footer-container">
-        <p>
-          Contact me at
-          <a href="mailto:hmishra123456789@gmail.com">hmishra123456789@gmail.com</a>
-        </p>
-        <p>
-          <a href="https://github.com/Harshalhellow" target="_blank">GitHub</a> |
-          <a href="https://www.linkedin.com/in/harshal-mishra-507b77187/" target="_blank">LinkedIn</a>
-        </p>
+        <p>Designed and built by Harshal Mishra.</p>
+        <a href="mailto:hmishra123456789@gmail.com">hmishra123456789@gmail.com</a>
       </div>
     </footer>
   </body>

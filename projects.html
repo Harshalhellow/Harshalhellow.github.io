@@ -3,76 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projects | Harshal Mishra Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
+    <title>Projects | Harshal Mishra</title>
+    <meta
+      name="description"
+      content="Selected software engineering, full-stack development and artificial intelligence projects by Harshal Mishra."
     />
-    <link rel="stylesheet" href="styleshet.css" />
+    <meta name="theme-color" content="#fffdfa" />
+    <link rel="canonical" href="https://harshalhellow.github.io/projects.html" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container header-container">
-        <h1>Projects</h1>
-        <nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html" aria-label="Harshal Mishra, home">
+          Harshal Mishra
+        </a>
+        <nav aria-label="Primary navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="writings.html">Writings</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="resume.html">Résumé</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="projects">
-      <div class="container">
-        <h2>My Projects</h2>
-        
-        <div class="project">
-          <h3>Volunteering Website</h3>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container page-heading">
+          <p class="eyebrow">Project archive</p>
+          <h1>Projects built to explore, learn and solve problems.</h1>
           <p>
-            This project is a fully responsive website designed to connect volunteers with local opportunities. While building it, I enhanced my skills in front-end development, user interface design, and accessibility. I learned the importance of clear communication, ease of navigation, and user engagement in creating a positive online experience.
-          </p>
-          <p>
-            <a href="https://github.com/Harshalhellow/VolunteeringWebsite" target="_blank" class="btn">View on GitHub</a>
+            These projects span full-stack development, object-oriented C++ and
+            evolutionary algorithms. Each one helped me strengthen a different part of
+            the software-development process.
           </p>
         </div>
+      </section>
 
-        <div class="project">
-          <h3>2048 Genetic Algorithm</h3>
-          <p>
-            In this project, I applied genetic algorithm techniques to the popular 2048 game. The challenge was to optimize decision-making processes and improve the game’s strategy through evolutionary algorithms. I gained a deeper understanding of algorithm tuning, simulation modeling, and how artificial intelligence can be leveraged to solve real-world puzzles.
-          </p>
-          <p>
-            <a href="https://github.com/Harshalhellow/GenticAlgorithim2048" target="_blank" class="btn">View on GitHub</a>
-          </p>
-        </div>
+      <section class="page-section" aria-label="Project list">
+        <div class="container content-grid">
+          <article class="project">
+            <p class="card-label">Full-stack web application</p>
+            <h3>Volunteer management platform</h3>
+            <p>
+              Built a responsive platform for connecting volunteers with community
+              opportunities, including Google Sign-In, authentication, events, email
+              functionality and administrative dashboards.
+            </p>
+            <ul class="tag-list">
+              <li>Vue.js</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
+              <li>Responsive CSS</li>
+            </ul>
+            <a
+              class="card-link"
+              href="https://github.com/Harshalhellow/VolunteeringWebsite"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View repository <span aria-hidden="true">↗</span></a
+            >
+          </article>
 
-        <div class="project">
-          <h3>Farming Simulator Game</h3>
-          <p>
-            The Farming Simulator Game project allowed me to dive into game design and simulation programming. I developed an engaging simulation experience, focusing on realistic resource management and physics. This project taught me about real-time processing, performance optimization, and the balance between simulation accuracy and user enjoyment.
-          </p>
-          <p>
-            <a href="https://github.com/Harshalhellow/Farming-Simulator-Game-" target="_blank" class="btn">View on GitHub</a>
-          </p>
+          <article class="project">
+            <p class="card-label">C++ game development</p>
+            <h3>Farming Simulator</h3>
+            <p>
+              Developed a 2D farming game using object-oriented design and SFML,
+              building gameplay, resource and rendering systems while practising
+              maintainable C++ structure.
+            </p>
+            <ul class="tag-list">
+              <li>C++</li>
+              <li>SFML</li>
+              <li>Object-oriented design</li>
+            </ul>
+            <a
+              class="card-link"
+              href="https://github.com/Harshalhellow/Farming-Simulator-Game-"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View repository <span aria-hidden="true">↗</span></a
+            >
+          </article>
+
+          <article class="project">
+            <p class="card-label">Artificial intelligence experiment</p>
+            <h3>2048 Genetic Algorithm</h3>
+            <p>
+              Explored evolutionary optimisation by representing, evaluating and
+              iterating candidate strategies for the game 2048, with a focus on
+              fitness design and algorithm tuning.
+            </p>
+            <ul class="tag-list">
+              <li>Genetic algorithms</li>
+              <li>Optimisation</li>
+              <li>Simulation</li>
+            </ul>
+            <a
+              class="card-link"
+              href="https://github.com/Harshalhellow/GenticAlgorithim2048"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View repository <span aria-hidden="true">↗</span></a
+            >
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <div class="container footer-container">
-        <p>
-          Contact me at
-          <a href="mailto:hmishra123456789@gmail.com">hmishra123456789@gmail.com</a>
-        </p>
-        <p>
-          <a href="https://github.com/Harshalhellow" target="_blank">GitHub</a> |
-          <a href="https://www.linkedin.com/in/harshal-mishra-507b77187/" target="_blank">LinkedIn</a>
-        </p>
+        <p>© 2026 Harshal Mishra. Designed and built in Adelaide.</p>
+        <div class="footer-links">
+          <a href="mailto:hmishra123456789@gmail.com">Email</a>
+          <a href="writings.html">Writing</a>
+          <a
+            href="https://github.com/Harshalhellow"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/harshal-mishra-507b77187/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </div>
       </div>
     </footer>
   </body>

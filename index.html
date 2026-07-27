@@ -3,58 +3,256 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Harshal Mishra | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
+    <title>Harshal Mishra | Software Developer</title>
+    <meta
+      name="description"
+      content="Harshal Mishra is an Adelaide-based software developer and ML/AI Honours researcher building practical software and applied AI systems."
     />
-    <link rel="stylesheet" href="styleshet.css" />
+    <meta name="theme-color" content="#fffdfa" />
+    <meta property="og:title" content="Harshal Mishra | Software Developer" />
+    <meta
+      property="og:description"
+      content="Software developer and ML/AI Honours researcher working across education technology, medical AI and full-stack development."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://harshalhellow.github.io/" />
+    <meta
+      property="og:image"
+      content="https://harshalhellow.github.io/profile.jpg"
+    />
+    <link rel="canonical" href="https://harshalhellow.github.io/" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container header-container">
-        <h1>Harshal Mishra</h1>
-        <nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html" aria-label="Harshal Mishra, home">
+          Harshal Mishra
+        </a>
+        <nav aria-label="Primary navigation">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="writings.html">Writings</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="resume.html">Résumé</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="home" class="home-section">
-      <div class="container home-container">
-        <div class="home-text">
-          <h2>Welcome to My Portfolio</h2>
-          <p>
-            Hi, I'm Harshal Mishra – a passionate developer who has experince  in web development, Genetic Algorithms, and software engineering.  I love to learn about new areas of Computer Science  and continuously learn through hands-on projects.
-          </p>
-          <p>
-            Explore my projects to see how I have combined creativity and technical skills to build innovative applications. Feel free to check out my resume and writings for more details on my professional journey and thought process.
-          </p>
-          <a href="projects.html" class="btn">View Projects</a>
+    <main id="main-content">
+      <section id="home" class="home-section hero-section">
+        <div class="container home-container">
+          <div class="home-text">
+            <p class="eyebrow">
+              Computer Science graduate · ML &amp; AI Honours researcher
+            </p>
+            <h1>Software developer building practical, human-centred systems with AI.</h1>
+            <p class="hero-summary">
+              Hi, I’m Harshal. I build practical software and apply machine learning
+              to real-world problems—from education technology to deep learning for
+              preoperative colon-cancer staging.
+            </p>
+            <div class="hero-actions">
+              <a href="#work" class="btn">View selected work</a>
+              <a href="resume.html" class="btn btn-secondary">View résumé</a>
+            </div>
+            <div class="hero-links">
+              <a
+                href="https://github.com/Harshalhellow"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/harshal-mishra-507b77187/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+
+          <figure class="home-image">
+            <img
+              src="profile.webp"
+              width="720"
+              height="720"
+              alt="Portrait of Harshal Mishra"
+            />
+            <figcaption>Adelaide, Australia · Open to graduate opportunities</figcaption>
+          </figure>
         </div>
-        <div class="home-image">
-          <img src="profile.jpg" alt="Harshal Mishra" />
+      </section>
+
+      <section id="work" class="portfolio-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2>Work that connects software with real-world problems.</h2>
+            <p>
+              A selection of professional, research and full-stack projects that
+              demonstrate how I approach useful, maintainable software.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="work-card">
+              <p class="card-label">Professional experience</p>
+              <h3>C3L Chatmate</h3>
+              <p>
+                Shipped features for an educational AI platform, including student
+                attachment controls, word-count constraints and interface reliability
+                improvements.
+              </p>
+              <ul class="tag-list">
+                <li>Django</li>
+                <li>JavaScript</li>
+                <li>Product development</li>
+              </ul>
+            </article>
+
+            <article class="work-card featured-card">
+              <p class="card-label">Honours research · In progress</p>
+              <h3>AI for colon-cancer staging</h3>
+              <p>
+                Investigating deep learning and external validation for preoperative
+                lymph-node metastasis prediction using staging CT scans.
+              </p>
+              <ul class="tag-list">
+                <li>Python</li>
+                <li>PyTorch</li>
+                <li>Medical imaging</li>
+                <li>Swin Transformer</li>
+              </ul>
+            </article>
+
+            <article class="work-card">
+              <p class="card-label">Full-stack project</p>
+              <h3>Volunteer management platform</h3>
+              <p>
+                Built a responsive platform with authentication, events, email
+                functionality and administrative dashboards for connecting volunteers
+                with community opportunities.
+              </p>
+              <ul class="tag-list">
+                <li>Vue.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+              </ul>
+              <a
+                class="card-link"
+                href="https://github.com/Harshalhellow/VolunteeringWebsite"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View repository <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+
+          <a class="text-link" href="projects.html">
+            Explore all projects <span aria-hidden="true">→</span>
+          </a>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="experience" class="portfolio-section section-muted">
+        <div class="container split-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>Learning by building, researching and collaborating.</h2>
+            <p>
+              My experience spans production software, applied machine learning and
+              team-based university projects.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <p class="timeline-date">2026–Present</p>
+              <h3>Honours in Machine Learning and AI</h3>
+              <p>Adelaide University · Medical AI research</p>
+            </article>
+            <article class="timeline-item">
+              <p class="timeline-date">2025–2026</p>
+              <h3>Assistant Researcher · Software Developer</h3>
+              <p>C3L · Educational technology</p>
+            </article>
+            <article class="timeline-item">
+              <p class="timeline-date">Completed 2025</p>
+              <h3>Bachelor of Computer Science (Advanced)</h3>
+              <p>University of Adelaide · Artificial intelligence</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="portfolio-section">
+        <div class="container about-layout">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>Curious about the technical details and the people using them.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I enjoy understanding how systems work, turning ambiguous problems into
+              practical steps and seeing a feature become useful to real people. I’m
+              particularly interested in software engineering, applied AI and projects
+              where reliable implementation matters as much as the model.
+            </p>
+            <dl class="skills-list">
+              <div>
+                <dt>Languages</dt>
+                <dd>Python · C++ · JavaScript · SQL</dd>
+              </div>
+              <div>
+                <dt>Frameworks</dt>
+                <dd>Django · Vue.js · Express.js · PyTorch</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>Software engineering · Machine learning · Web development</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-heading">
+        <div class="container contact-card">
+          <div>
+            <p class="eyebrow">Get in touch</p>
+            <h2 id="contact-heading">Interested in working together?</h2>
+            <p>
+              I’m open to graduate software engineering and applied AI opportunities.
+            </p>
+          </div>
+          <a class="btn" href="mailto:hmishra123456789@gmail.com">Send me an email</a>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="container footer-container">
-        <p>
-          Contact me at
-          <a href="mailto:hmishra123456789@gmail.com">hmishra123456789@gmail.com</a>
-        </p>
-        <p>
-          <a href="https://github.com/Harshalhellow" target="_blank">GitHub</a> |
-          <a href="https://www.linkedin.com/in/harshal-mishra-507b77187/" target="_blank">LinkedIn</a>
-        </p>
+        <p>© 2026 Harshal Mishra. Designed and built in Adelaide.</p>
+        <div class="footer-links">
+          <a href="mailto:hmishra123456789@gmail.com">Email</a>
+          <a href="writings.html">Writing</a>
+          <a
+            href="https://github.com/Harshalhellow"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/harshal-mishra-507b77187/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </div>
       </div>
     </footer>
   </body>

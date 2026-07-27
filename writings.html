@@ -3,82 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Writings | Harshal Mishra Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
+    <title>Writing and Research | Harshal Mishra</title>
+    <meta
+      name="description"
+      content="Technical writing and research by Harshal Mishra across artificial intelligence, game development and medical imaging."
     />
-    <link rel="stylesheet" href="styleshet.css" />
+    <meta name="theme-color" content="#fffdfa" />
+    <link rel="canonical" href="https://harshalhellow.github.io/writings.html" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container header-container">
-        <h1>Writings</h1>
-        <nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html" aria-label="Harshal Mishra, home">
+          Harshal Mishra
+        </a>
+        <nav aria-label="Primary navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#about">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="writings.html" class="active">Writings</a></li>
+            <li><a href="resume.html">Résumé</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="writings">
-      <div class="container">
-        <h2>My Writings & Research</h2>
-        <p>
-         Below are two featured pieces along with previews and summaries. More writings will be added as my research progresses.
-        </p>
-
-        <div class="writing-item">
-          <h3>Enhancing AI NPC Reactions</h3>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container page-heading">
+          <p class="eyebrow">Writing and research</p>
+          <h1>Exploring how intelligent systems behave and create value.</h1>
           <p>
-            <strong>Summary:</strong> This literature review examines techniques to improve the reactivity of AI-driven NPCs (non-player characters) in games. It covers state-of-the-art methods, the challenges faced in real-time processing, and the potential for adaptive learning.
-          </p>
-          <div class="preview">
-            <p><em>Preview:</em> "In modern game development, creating responsive and intelligent NPCs is essential. This review delves into how AI can simulate realistic behaviors..."</p>
-          </div>
-          <p>
-            <a href="Literature%20review.pdf" target="_blank" class="btn">Read Full Review</a>
+            Literature reviews, technical reports and ongoing research covering
+            machine learning, interactive systems and medical imaging.
           </p>
         </div>
+      </section>
 
-        <div class="writing-item">
-          <h3>The Role of Machine Learning in Modern Software</h3>
-          <p>
-            <strong>Summary:</strong> This report explores the result of the project that attepmts  to retrain  sadtalker to improve its ablitiy to recognise non humanoid faces and create more immersive facial reaction to incraese immersiveness.  
-          </p>
-          <div class="preview">
-            <p><em>Preview:</em> "Machine learning has revolutionized the way we approach software design. Through real-world examples, this report highlights how ML algorithms are deployed to optimize performance and enhance user experience..."</p>
-          </div>
-          <p>
-            <a href="report.pdf" target="_blank" class="btn">Read Full Report</a>
-          </p>
-        </div>
+      <section class="page-section" aria-label="Writing list">
+        <div class="container content-grid">
+          <article class="writing-item">
+            <p class="card-label">Literature review</p>
+            <h3>Enhancing AI NPC Reactions</h3>
+            <p>
+              Reviews approaches for making non-player characters more reactive and
+              adaptive, including the practical challenges of producing convincing
+              behaviour in real time.
+            </p>
+            <a
+              class="card-link"
+              href="Literature%20review.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read the review <span aria-hidden="true">↗</span></a
+            >
+          </article>
 
-        <div class="more-writings">
-          <h3>More Writings Coming Soon...</h3>
-          <p>
-            Stay tuned for upcoming articles, research papers, and more.
-          </p>
+          <article class="writing-item">
+            <p class="card-label">Machine-learning project report</p>
+            <h3>Improving SadTalker for Non-Human Faces</h3>
+            <p>
+              Documents an experiment retraining SadTalker to better recognise and
+              animate non-human faces, with the goal of producing more flexible facial
+              animation.
+            </p>
+            <a
+              class="card-link"
+              href="report.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read the report <span aria-hidden="true">↗</span></a
+            >
+          </article>
+
+          <article class="writing-item featured-card">
+            <p class="card-label">Current Honours research · In progress</p>
+            <h3>Deep Learning for Preoperative Lymph-Node Prediction</h3>
+            <p>
+              Investigating contrast-enhanced staging CT, external validation and
+              modern deep-learning architectures for predicting lymph-node metastasis
+              in colon cancer.
+            </p>
+          </article>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
       <div class="container footer-container">
-        <p>
-          Contact me at
-          <a href="mailto:hmishra123456789@gmail.com">hmishra123456789@gmail.com</a>
-        </p>
-        <p>
-          <a href="https://github.com/Harshalhellow" target="_blank">GitHub</a> |
-          <a href="https://www.linkedin.com/in/harshal-mishra-507b77187/" target="_blank">LinkedIn</a>
-        </p>
+        <p>© 2026 Harshal Mishra. Designed and built in Adelaide.</p>
+        <div class="footer-links">
+          <a href="mailto:hmishra123456789@gmail.com">Email</a>
+          <a href="writings.html" aria-current="page">Writing</a>
+          <a
+            href="https://github.com/Harshalhellow"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/harshal-mishra-507b77187/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </div>
       </div>
     </footer>
   </body>

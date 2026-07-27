@@ -3,53 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Resume | Harshal Mishra Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
+    <title>Résumé | Harshal Mishra</title>
+    <meta
+      name="description"
+      content="View or download Harshal Mishra's software development résumé."
     />
-    <link rel="stylesheet" href="styleshet.css" />
+    <meta name="theme-color" content="#fffdfa" />
+    <link rel="canonical" href="https://harshalhellow.github.io/resume.html" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container header-container">
-        <h1>Resume</h1>
-        <nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="brand" href="index.html" aria-label="Harshal Mishra, home">
+          Harshal Mishra
+        </a>
+        <nav aria-label="Primary navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#about">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html" class="active">Resume</a></li>
-            <li><a href="writings.html">Writings</a></li>
+            <li><a href="resume.html" aria-current="page">Résumé</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="resume">
-      <div class="container">
-        <h2>My Professional Journey</h2>
-        <p>
-          Here you can review my resume detailing my education, skills, and experience. I believe in continuous learning and professional growth, and my resume highlights the projects and roles that have shaped my career.
-        </p>
-        <iframe src="Current%20Ressume.pdf" width="100%" height="600px"></iframe>
-        <p>
-          <a href="Current%20Ressume.pdf" download class="btn">Download Resume</a>
-        </p>
-      </div>
-    </section>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container page-heading">
+          <p class="eyebrow">Résumé</p>
+          <h1>Software development, applied AI and collaborative delivery.</h1>
+          <p>
+            Review my education, technical experience and projects below, or download
+            a copy for later.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="container">
+          <div class="resume-actions">
+            <a href="resume.pdf" download class="btn">Download résumé</a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              Open in a new tab
+            </a>
+          </div>
+          <iframe
+            class="resume-frame"
+            src="resume.pdf"
+            title="Harshal Mishra résumé"
+          ></iframe>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="container footer-container">
-        <p>
-          Contact me at
-          <a href="mailto:hmishra123456789@gmail.com">hmishra123456789@gmail.com</a>
-        </p>
-        <p>
-          <a href="https://github.com/Harshalhellow" target="_blank">GitHub</a> |
-          <a href="https://www.linkedin.com/in/harshal-mishra-507b77187/" target="_blank">LinkedIn</a>
-        </p>
+        <p>© 2026 Harshal Mishra. Designed and built in Adelaide.</p>
+        <div class="footer-links">
+          <a href="mailto:hmishra123456789@gmail.com">Email</a>
+          <a href="writings.html">Writing</a>
+          <a
+            href="https://github.com/Harshalhellow"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/harshal-mishra-507b77187/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </div>
       </div>
     </footer>
   </body>
